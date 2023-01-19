@@ -17,15 +17,8 @@ def analyze_dice(dice)
     end
 end
 
-def reload_dice
-    puts "----OwO-----"
-    puts "Il te reste des marches à gravir !"
-    puts "Relance donc le dé l'ami, appuie sur 'l' !"
-    gets.chomp
-end
-
 def show_state(num)
-    puts "Vous êtes sur la marche n° #{num}"
+    puts "Grimpe encore l'ami ! Tu es sur la marche n° #{num}"
   end
 
 def is_over?(num)
@@ -50,7 +43,7 @@ def play
       show_state(step)
     end
   
-    puts "===Vous avez gagné!==="
+    puts "===Tu as gagné!==="
   end
 
 play
